@@ -1,4 +1,4 @@
-# DS-Unit-3-Sprint-1-Software-Engineering
+# DS-Unit-3-Sprint-1-Software-Engineering John Humphreys LSDS01
 Software Engineering and Reproducible Research for Data Science
 
 ## The World Beyond Notebooks
