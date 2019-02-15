@@ -237,6 +237,15 @@ career here, you'll have to answer the following:
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
+**Answers to Questions:**
+1. When I review code I look for consistency in use of Pythonic naming conventions.
+I pay attention first, however, to how close the code comes to achieving its
+intended purpose. After that, I assess the code's legibility and useful
+commenting/docstrings.
+2. Containerize the company's operations into independent containers. For example,
+with LambdaSchool data, I expect that student data is separated into unique containers
+by track, eg, DS in one container, FSW in another container, etc.
+
 ### Part 8 - Turn it in!
 
 Add all the files you wrote (`acme.py`, `acme_report.py`, and `acme_test.py`),
