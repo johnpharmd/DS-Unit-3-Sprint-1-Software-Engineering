@@ -20,8 +20,8 @@ def generate_products(num_prods=30):
     This function generates a list of a specified number of products
     '''
     for _ in range(num_prods):
-        prod_list.append([random.choice(adject_list),
-                         random.choice(noun_list), int_rand, int_rand,
+        prod_list.append([random.choice(ADJECTIVES),
+                         random.choice(NOUNS), int_rand, int_rand,
                          flamm_rand])
     return prod_list
 
@@ -37,8 +37,16 @@ def inventory_report(product_list):
     mean_weight = mean(lambda y: y[3], product_set)
     mean_flam = mean(lambda z: z[4], product_set)
 
-    print(product_set, mean_price, mean_weight, mean_flam)
-
+    report_text =
+    '''
+    ACME CORPORATION OFFICIAL INVENTORY REPORT
+    Unique product names: {}
+    Average price: {}
+    Average weight: {}
+    Average flammability: {}
+    '''
+    print(report_text.format(len(product_set), mean_price,
+                             mean_weight, mean_flam))
 
 if __name__ == '__main__':
     inventory_report(generate_products())
