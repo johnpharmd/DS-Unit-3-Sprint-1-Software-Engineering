@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 '''
-This module uses acme.py to generate random products then print a summary
+This module uses acme.py to generate random products, then prints a summary
 '''
 from acme import Product
 import random
@@ -26,13 +26,14 @@ def generate_products(num_prods=30):
     return prod_list
 
 
-def inventory_report():
+def inventory_report(product_list):
     '''
     This function calculates and prints number of unique product names
     in the product list; and mean price, weight, and flammability of
     listed products
     '''
-    pass
+    product_set = set(product_list)
+    # add more logic re calc of numeric values in docstring
 
 
 if __name__ == '__main__':
