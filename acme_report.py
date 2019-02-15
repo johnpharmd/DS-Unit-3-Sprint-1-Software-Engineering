@@ -32,8 +32,12 @@ def inventory_report(product_list):
     in the product list; and mean price, weight, and flammability of
     listed products
     '''
-    product_set = set(product_list)
-    # add more logic re calc of numeric values in docstring
+    product_set = set((lambda n: n[0], product_list))
+    mean_price = mean(lambda x: x[2], product_set)
+    mean_weight = mean(lambda y: y[3], product_set)
+    mean_flam = mean(lambda z: z[4], product_set)
+
+    print(product_set, mean_price, mean_weight, mean_flam)
 
 
 if __name__ == '__main__':
