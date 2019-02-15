@@ -22,3 +22,6 @@ def inventory_report():
     pass
 
 
+if __name__ == '__main__':
+    inventory_report(generate_products())
+
