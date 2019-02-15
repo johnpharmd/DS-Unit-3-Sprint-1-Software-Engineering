@@ -9,8 +9,8 @@ import random
 # using functional programming
 
 prod_list = []
-adject_list = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
-noun_list = ['Anvil', 'Catapult' 'Disguise' 'Mousetrap', '???']
+ADJECTIVES = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
+NOUNS = ['Anvil', 'Catapult' 'Disguise' 'Mousetrap', '???']
 int_rand = random.randrange(5, 101)  # use for both price and weight
 flamm_rand = random.randrange(0.0, 2.51)
 
