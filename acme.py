@@ -48,5 +48,25 @@ class BoxingGlove(Product):
     '''
     This class is for a fictional boxing glove product based on Product
     '''
-    pass
+    def __init__(self, weight=10):
+        self.weight = weight
+
+    def explode(self):
+        '''
+        Overrides superclass explode method
+        '''
+        return "...it's a glove."
+
+    def punch(self):
+        '''
+        This method returns an expressive string that reflects potential
+        pain-delivering ability of glove based on glove weight
+        '''
+        if self.weight < 5:
+            return "That tickles."
+        elif 5 <= self.weight < 15:
+            return "Hey that hurt!"
+        else:
+            return "OUCH!"
+
 
