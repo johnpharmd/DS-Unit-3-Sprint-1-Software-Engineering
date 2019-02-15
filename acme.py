@@ -21,13 +21,25 @@ class Product():
         This method calculates the quotient of product price and weight
         and returns a string regarding the 'stealability' of the product
         '''
-        pass
+        steal_quotient = self.price / self.weight
+        if steal_quotient < 0.5:
+            return "Not so stealable..."
+        elif 0.5 <= steal_quotient < 1.0:
+            return "Kinda stealable."
+        else:
+            return "Very stealable!"
+        
 
     def explode(self):
         '''
         This method calculates product flammability times weight and
         returns a string that describes explosion
         '''
-        pass
-
+        explode_product = int(self.flammability * self.weight)
+        if explode_product < 10:
+            return "...fizzle."
+        elif 10 <= explode_product < 50:
+            return "...boom!"
+        else:
+            return "...BABOOM!!"
 
