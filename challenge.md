@@ -4,7 +4,7 @@
 
 In this sprint challenge you will write code and answer questions related to
 object-oriented programming, code style/reviews, containers, and testing. Your
-code should be saved in `.py` files (*not* notebooks), and (along with this file
+**code should be saved in `.py` files** (*not* notebooks), and (along with this file
 including your written answers) added to your
 `DS-Unit-3-Sprint-1-Software-Engineering` repository.
 
@@ -28,12 +28,12 @@ following fields (variables that live "inside" the class):
 - `identifier` (integer, automatically genererated as a random (uniform) number
   anywhere from 1000000 to 9999999, includisve)(inclusive).
 
-Write a Python `class` to model the above data. Make sure you are *precise* in
-your field names and types, and that your class has an `__init__` constructor
+**Write a Python `class` to model the above data**. Make sure you are *precise* in
+your field names and types, and that **your class has an `__init__` constructor**
 method with appropriate defaults (or lack thereof).
 
-Save the class in `acme.py`, and you can test your code in a Python repl as
-follows:
+**Save the class in `acme.py`**, and you can **test your code in a Python repl as
+follows**:
 
 ```python
 >>> from acme import Product
@@ -53,7 +53,7 @@ follows:
 ### Part 2 - Objects that Go!
 
 The class you wrote in part 1 is nice, but it doesn't *do* anything - that is,
-it doesn't have any *methods*. So let's add some! Specifically, add two methods:
+it doesn't have any *methods*. So let's add some! Specifically, **add two methods**:
 
 - `stealability(self)` - calculates the price divided by the weight, and then
   returns a message: if the ratio is less than 0.5 return "Not so stealable...",
@@ -64,7 +64,7 @@ it doesn't have any *methods*. So let's add some! Specifically, add two methods:
   greater or equal to 10 but less than 50 return "...boom!", and otherwise
   return "...BABOOM!!"
 
-Save your code, and you can test as follows:
+**Save your code, and you can test as follows**:
 
 ```python
 >>> from acme import Product
@@ -80,7 +80,7 @@ Save your code, and you can test as follows:
 Of course, Acme doesn't just sell generic products - it sells all sorts of
 special specific things!
 
-Make a subclass of `Product` named `BoxingGlove` that does the following:
+**Make a subclass of `Product` named `BoxingGlove` that does the following**:
 
 - Change the default `weight` to 10 (but leave other defaults unchanged)
 - Override the `explode` method to always return "...it's a glove."
@@ -105,11 +105,11 @@ Example test run:
 
 ### Part 4 - Class Report
 
-Now you can represent your inventory - let's use these classes and write an
-`acme_report.py` module to generate random products and print a summary of them.
+Now you can represent your inventory - let's **use these classes and write an
+`acme_report.py` module to generate random products and print a summary of them**.
 For the purposes of these functions we will only use the `Product` class.
 
-Your module should include two functions:
+Your module should **include two functions**:
 
 - `generate_products()` should generate a given number of products (default
   30), randomly, and return them as a list
@@ -129,12 +129,12 @@ should vary uniformly across the following possibilities:
 You should implement only depending on `random` from the standard library, your
 `Product` class from `acme.py`, and built-in Python functionality.
 
-For the report, you should calculate and print the following values:
+For the report, you should **calculate and print the following values**:
 
 - Number of unique product names in the product list
 - Average (mean) price, weight, and flammability of listed products
 
-At the bottom of `acme_report.py` you should put the following code:
+**At the bottom of `acme_report.py` you should put the following code**:
 
 ```python
 if __name__ == '__main__':
@@ -158,7 +158,7 @@ and clearly identify all four relevant numbers.
 
 ### Part 5 - Measure twice, Test once
 
-Make a file `acme_test.py` starting from the following code:
+**Make a file `acme_test.py` starting from the following code**:
 
 ```python
 #!/usr/bin/env python
@@ -189,13 +189,13 @@ Ran 1 test in 0.000s
 OK
 ```
 
-Complete the following:
+**Complete the following:**
 
-- Add at least *2* more test methods to `AcmeProductTests` for the base
+- **Add** at least *2* more test methods to `AcmeProductTests` for the base
   `Product` class: at least 1 that tests default values (as shown), and one that
   builds an object with different values and ensures their `stealability()` and
   `explode()` methods function as they should
-- Write a new test class `AcmeReportTests` with at least 2 test methods:
+- **Write** a new test class `AcmeReportTests` with at least 2 test methods:
   `test_default_num_products` which checks that it really does receive a list of
   length 30, and `test_legal_names` which checks that the generated names for a
   default batch of products are all valid possible names to generate (adjective,
@@ -219,13 +219,13 @@ you're already done!
 If not, go back and fix things! If you don't have a built-in tool for checking,
 you can use [PEP8 online](http://pep8online.com/).
 
-Go for lint-free! If there's a stubborn warning or two you can't fix though,
+**Go for lint-free!** If there's a stubborn warning or two you can't fix though,
 it's okay to leave a comment explaining it and move on.
 
 ### Part 7 - Questions (and your Answers)
 
 Acme Corporation isn't just a few `.py` files. If you want to grow in your
-career here, you'll have to answer the following:
+career here, you'll have to **answer the following:**
 
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
@@ -234,13 +234,13 @@ career here, you'll have to answer the following:
   slightly different things running on all of them. How could containers help us
   improve this situation?
 
-Answer both of these questions (baseline ~5 sentences) here in text.
+**Answer both of these questions (baseline ~5 sentences) here in text.**
 
 ### Part 8 - Turn it in!
 
-Add all the files you wrote (`acme.py`, `acme_report.py`, and `acme_test.py`),
+**Add all the files you wrote (`acme.py`, `acme_report.py`, and `acme_test.py`),
 as well as *this* file with your answers to part 7, to your weekly repo
-(`DS-Unit-3-Sprint-1-Software-Engineering`). Commit, push, and await feedback
+(`DS-Unit-3-Sprint-1-Software-Engineering`). Commit, push, and await feedback**
 from Acme Corporation management. Thanks for your hard work!
 
 *Bonus!* Got this far? Read up on the [history of the fine Acme
