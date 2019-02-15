@@ -43,3 +43,10 @@ class Product():
         else:
             return "...BABOOM!!"
 
+
+class BoxingGlove(Product):
+    '''
+    This class is for a fictional boxing glove product based on Product
+    '''
+    pass
+
