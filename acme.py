@@ -49,6 +49,7 @@ class BoxingGlove(Product):
     This class is for a fictional boxing glove product based on Product
     '''
     def __init__(self, weight=10):
+        super(BoxingGlove, self).__init__()
         self.weight = weight
 
     def explode(self):
