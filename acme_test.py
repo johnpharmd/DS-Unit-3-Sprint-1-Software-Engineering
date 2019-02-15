@@ -12,6 +12,10 @@ class AcmeProductTests(unittest.TestCase):
         prod = Product('Test Product')
         self.assertEqual(prod.price, 10)
 
+    # add 2 more test methods here
+
+
+# add new class here
 
 if __name__ == '__main__':
     unittest.main()
